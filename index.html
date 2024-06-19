@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Restaurant Website</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="base.css" />
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="script" href="index.js"/>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div id="imageModal" class="modal">
+            <span class="modal__close">&times;</span>
+            <img class="modal__content" id="modalImg">
+        </div>
+        <div id="cookie-consent" class="cookie-consent">
+            <p>Мы используем cookies для улучшения работы сайта. Продолжая использовать сайт, вы соглашаетесь с использованием cookies.</p>
+            <button id="accept-cookies" class="btn-large-green">Принять</button>
+        </div>
+        <div id="time-display" class="time-display"></div>
+        <a href="#top" id="back-to-top" class="back-to-top" title="Back to top">▲</a>
+        <header class="header">
+            <nav class="navigation">
+                <img
+                    src="assets/logo-white.png"
+                    alt="DeliziOso"
+                    class="logo-white"
+                />
+                <ul class="navigation__links">
+                    <li><a href="index.html" id="navigation__link">Home</a></li>
+                    <li><a href="#popmenu">Menu</a></li>
+                    <li><a href="index.html">About Us</a></li>
+                    <li><a href="index.html">Order online</a></li>
+                    <li><a href="#reservation-section">Reservation</a></li>
+                    <li><a href="#info">Contact Us</a></li>
+                </ul>
+                <div class="navigation__actions">
+                    <figure>
+                        <button style="
+                            background-image: url(assets/Cart.png);
+                            width: 70%;
+                            height: 70%;
+                            border: none;
+                            cursor: pointer;
+                            ">
+                        </button>
+                    </figure>
+                    <button class="btn-small-green">Log In</button>
+                    <div id="login-message" class="login-message">Меню авторизации появится немного позже</div>
+                </div>
+            </nav>
+        </header>
+        <section id="hero-section">
+            <div class="hero-section__container">
+                <div class="hero-section__left">
+                    <span>Restauran</span>
+                    <h1 class="hero-section__heading">Italian <br>Cuisine</h1>
+                    <p class="hero-section__description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Sodales senectus dictum arcu sit tristique donec eget.
+                    </p>
+                    <div class="hero-section__cta">
+                        <button class="btn-large-orange">Order now</button>
+                        <button class="btn-large-green">Reservation</button>
+                    </div>
+                </div>
+
+                <div class="hero-section__right">
+                    <img
+                        src="assets/hero.png"
+                        alt="Spaghetti"
+                        class="hero-section__img"
+                    />
+                </div>
+            </div>
+        </section>
+        <section id="welcome-section">
+            <div class="welcome-section__container">
+                <figure class="welcome-section__left">
+                    <img src="assets/salad.png" alt="Salad" />
+                </figure>
+                <div class="welcome-section__right">
+                    <h2>Welcome to <span>delizioso</span></h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Facilisis ultricies at eleifend proin. Congue nibh nulla
+                        malesuada ultricies nec quam
+                    </p>
+                    <button class="btn-large-orange">See our menu</button>
+                </div>
+            </div>
+        </section>
+        <section id="menu-section">
+            <div class="menu-section__container">
+                <h2 id="popmenu">Our popular menu</h2>
+                <div class="menu-section__filters">
+                    <button class="btn-large-black">All Catagories</button>
+                    <button class="btn-large-gray">Dinner</button>
+                    <button class="btn-large-gray">Lunch</button>
+                    <button class="btn-large-gray">Dessert</button>
+                    <button class="btn-large-gray">Drink</button>
+                </div>
+                <div class="menu-section__meals">
+                    <div class="card">
+                        <img
+                            src="assets/menu-spaghetti.png"
+                            alt="Spaghetti"
+                            class="card__img"
+                        />
+                        <h3 class="card__title">Spaghetti</h3>
+                        <div class="menu-section__stars">
+                            <img src="assets/star-filled.png" alt="" />
+                            <img src="assets/star-filled.png" alt="" />
+                            <img src="assets/star-filled.png" alt="" />
+                            <img src="assets/star-filled.png" alt="" />
+                            <img src="assets/star-empty.png" alt="" />
+                        </div>
+                        <p class="card__text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Egestas consequat mi eget auctor aliquam,diam.
+                        </p>
+                        <div class="card__footer">
+                            <span class="menu-section__price">$12.05</span>
+                            <button class="btn-md-orange">Order Now</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img
+                            src="assets/menu-gnocchi.png"
+                            alt="Spaghetti"
+                            class="card__img"
+                        />
+                        <h3 class="card__title">Gnocchi</h3>
+                        <div class="menu-section__stars">
+                            <img src="assets/star-filled.png" alt="" />
+                            <img src="assets/star-filled.png" alt="" />
+                            <img src="assets/star-filled.png" alt="" />
+                            <img src="assets/star-filled.png" alt="" />
+                            <img src="assets/star-empty.png" alt="" />
+                        </div>
+                        <p class="card__text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Egestas consequat mi eget auctor aliquam,diam.
+                        </p>
+                        <div class="card__footer">
+                            <span class="menu-section__price">$12.05</span>
+                            <button class="btn-md-orange">Order Now</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img
+                            src="assets/menu-rovioli.png"
+                            alt="Spaghetti"
+                            class="card__img"
+                        />
+                        <h3 class="card__title">Rovioli</h3>
+                        <div class="menu-section__stars">
+                            <img src="assets/star-filled.png" alt="" />
+                            <img src="assets/star-filled.png" alt="" />
+                            <img src="assets/star-filled.png" alt="" />
+                            <img src="assets/star-filled.png" alt="" />
+                            <img src="assets/star-empty.png" alt="" />
+                        </div>
+                        <p class="card__text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Egestas consequat mi eget auctor aliquam,diam.
+                        </p>
+                        <div class="card__footer">
+                            <span class="menu-section__price">$12.05</span>
+                            <button class="btn-md-orange">Order Now</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img
+                            src="assets/menu-penne-alla-vodak.png"
+                            alt="Spaghetti"
+                            class="card__img"
+                        />
+                        <h3 class="card__title">Penne Alla Vodak</h3>
+                        <div class="menu-section__stars">
+                            <img src="assets/star-filled.png" alt="" />
+                            <img src="assets/star-filled.png" alt="" />
+                            <img src="assets/star-filled.png" alt="" />
+                            <img src="assets/star-filled.png" alt="" />
+                            <img src="assets/star-empty.png" alt="" />
+                        </div>
+                        <p class="card__text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Egestas consequat mi eget auctor aliquam,diam.
+                        </p>
+                        <div class="card__footer">
+                            <span class="menu-section__price">$12.05</span>
+                            <button class="btn-md-orange">Order Now</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img
+                            src="assets/menu-risoto.png"
+                            alt="Spaghetti"
+                            class="card__img"
+                        />
+                        <h3 class="card__title">Risoto</h3>
+                        <div class="menu-section__stars">
+                            <img src="assets/star-filled.png" alt="" />
+                            <img src="assets/star-filled.png" alt="" />
+                            <img src="assets/star-filled.png" alt="" />
+                            <img src="assets/star-filled.png" alt="" />
+                            <img src="assets/star-empty.png" alt="" />
+                        </div>
+                        <p class="card__text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Egestas consequat mi eget auctor aliquam,diam.
+                        </p>
+                        <div class="card__footer">
+                            <span class="menu-section__price">$12.05</span>
+                            <button class="btn-md-orange">Order Now</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img
+                            src="assets/menu-splitza.png"
+                            alt="Spaghetti"
+                            class="card__img"
+                        />
+                        <h3 class="card__title">Splitza Signature</h3>
+                        <div class="menu-section__stars">
+                            <img src="assets/star-filled.png" alt="" />
+                            <img src="assets/star-filled.png" alt="" />
+                            <img src="assets/star-filled.png" alt="" />
+                            <img src="assets/star-filled.png" alt="" />
+                            <img src="assets/star-empty.png" alt="" />
+                        </div>
+                        <p class="card__text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Egestas consequat mi eget auctor aliquam,diam.
+                        </p>
+                        <div class="card__footer">
+                            <span class="menu-section__price">$12.05</span>
+                            <button class="btn-md-orange">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <h2>
+                <img style="cursor: pointer;" src="assets/Left arrow.png">
+                <img style="cursor: pointer;" src="assets/1.png">
+                <img style="cursor: pointer;" src="assets/2.png">
+                <img style="cursor: pointer;" src="assets/3.png">
+                <img src="assets/....png">
+                <img style="cursor: pointer;" src="assets/Right arrow.png">
+                </h2>
+            </div>
+        </section>
+        <section id="reservation-section">
+            <div class="reservation-section__container">
+                <figure class="reservation-section__left">
+                    <img
+                        src="assets/reservation.png"
+                        alt="People gathering for food"
+                    />
+                </figure>
+                <div class="reservation-section__right">
+                    <h2>Let's reserve <br> <span>a table</span></h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Facilisis ultricies at eleifend proin. Congue nibh nulla
+                        malesuada ultricies nec quam
+                    </p>
+                    <button class="btn-large-orange">Reservation</button>
+                </div>
+            </div>
+        </section>
+        <section id="chefs-section">
+            <div class="chefs-section__container">
+                <h2>Our greatest chefs</h2>
+                <div class="chefs-section__chefs">
+                    <div class="chefs-section__chef">
+                        <img src="assets/betran.png" alt="Betran Chef" />
+                        <h4>Betran Komar</h4>
+                        <p>Head Chef</p>
+                    </div>
+                    <div class="chefs-section__chef">
+                        <img src="assets/ferry.png" alt="Ferry Chef" />
+                        <h4>Ferry Sauwi</h4>
+                        <p>Chef</p>
+                    </div>
+                    <div class="chefs-section__chef">
+                        <img src="assets/iswan.png" alt="Iswan Chef" />
+                        <h4>Iswan Dracho</h4>
+                        <p>Chef</p>
+                    </div>
+                </div>
+                <button class="btn-large-orange">View All</button>
+            </div>
+        </section>
+        <section id="testimonials-section">
+            <div class="testimonials-section__container">
+                <h2>Our customers say</h2>
+                <br>
+                <img src="assets/customers-1.png" alt="Starla Virgoun">
+                <h3>Starla Virgoun</h3>
+                <p>
+                    Financial advisor
+                </p>
+                <br>
+                <div class="testimonials-section__container2">
+                    <h1>“</h1>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing <br>
+                    elit. Facilisis ultricies at eleifend proin. Congue nibh <br>
+                    nulla malesuada ultricies nec quam 
+                    <h2>“</h2>
+                </div>
+                <div class="testimonials-section__container3">
+                    <div style="margin-left:auto; margin-right:auto;" class="images-container">
+                        <img width="50%" height="50%" src="assets/2customers-2.png">
+                        <img width="70%" height="70%" src="assets/2customers-3.png">
+                        <img width="85%" height="85%" src="assets/customers-4.png">
+                        <img width="100%" height="100%"src="assets/2customers-1.png">
+                        <img width="85%" height="85%" src="assets/customers-5.png">
+                        <img width="70%" height="70%" src="assets/2customers-6.png">
+                        <img width="50%" height="50%" src="assets/2customers-7.png">
+                    </div>
+                </div>
+        </div>
+        </section>
+        <section id="hours-section">
+            <div class="hours-section__container">
+                <div class="hours-section__background">
+                    <div class="hours-section__hours">
+                        <h2>we are open from</h2>
+                        <h3>Monday - Sunday</h3>
+                        <div class="hours-section__lunch-dinner">
+                            <p>Launch: Mon-Sun: 11:00am-02:00pm</p>
+                            <p>Dinner: Sunday: 04:00pm-08:00pm</p>
+                            <p>04:00pm-09:00pm</p>
+                        </div>
+                        <button class="btn-large-orange">Order Now</button>
+                        <button class="btn-large-white">Reservation</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer id="footer">
+            <div class="footer__container">
+                <div class="footer__content">
+                    <div class="footer__brand">
+                        <img
+                            src="assets/logo-dark.png"
+                            alt=""
+                            class="footer__logo"
+                        />
+                        <p class="footer__text">
+                            Viverra gravida morbi egestas facilisis tortor netus
+                            non duis tempor.
+                        </p>
+                        <div class="footer__social-icons">
+                            <img
+                                src="assets/twitter.png"
+                                alt="Twitter"
+                                style="cursor: pointer;"
+                            />
+                            <img src="assets/instagram.png" alt="Instagram" style="cursor: pointer;"/>
+                            <img src="assets/facebook.png" alt="Facebook" style="cursor: pointer;"/>
+                        </div>
+                    </div>
+                    <div class="footer__pages">
+                        <h4 class="footer__heading">Page</h4>
+                        <a href="index.html" class="footer__text">Home</a>
+                        <a href="#popmenu" class="footer__text">Menu</a>
+                        <a href="index.html" class="footer__text">Order Online</a>
+                        <a href="index.html" class="footer__text">Catering</a>
+                        <a href="#reservation-section" class="footer__text">Reservation</a>
+                    </div>
+                    <div class="footer__about">
+                        <h4 class="footer__heading">Information</h4>
+                        <a href="index.html" class="footer__text">About us</a>
+                        <a href="index.html" class="footer__text">Testimonial</a>
+                        <a href="index.html" class="footer__text">Event</a>
+                    </div>
+                    <div  id="info" class="footer__contact">
+                        <h4 class="footer__heading">Get In Touch</h4>
+                        <p class="footer__text">
+                            3247 Johnson Ave, Bronx, NY <br/>
+                            10463, Amerika Serikat
+                        </p>
+                        <a
+                            class="footer__text"
+                            >delizioso@gmail.com</a
+                        >
+                        <a class="footer__text"
+                            >+123 4567 8901</a
+                        >
+                    </div>
+                </div>
+                <p id="current-year" class="footer__text text-center">
+                    Copyright &copy; <span id="year"></span> Delizioso
+                </p>                
+            </div>
+        </footer>
+    </body>
+</html>

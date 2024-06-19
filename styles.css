@@ -1,0 +1,600 @@
+/* Заголовок */
+
+.header {
+    height: 80px; /* Высота заголовка */
+}
+
+.logo-white {
+    height: 51px; /* Высота логотипа */
+}
+
+.navigation {
+    max-width: 1440px; /* Максимальная ширина навигации */
+    margin: 0 auto; /* Центрирование навигации */
+
+    display: flex; /* Flexbox для размещения элементов в строку */
+    justify-content: space-between; /* Пространство между элементами */
+    align-items: center; /* Выравнивание элементов по вертикали по центру */
+    height: 100%; /* Высота навигации равна высоте родителя */
+    padding-left: 80px; /* Отступ слева */
+    padding-right: 80px; /* Отступ справа */
+}
+
+.navigation__links {
+    display: flex; /* Flexbox для размещения элементов в строку */
+    gap: 45px; /* Расстояние между элементами */
+    align-items: center; /* Выравнивание элементов по вертикали по центру */
+}
+
+.navigation__links li a {
+    color: #311f09; /* Цвет текста ссылок */
+    font-size: 14px; /* Размер шрифта ссылок */
+}
+
+#navigation__link {
+    color: #ff8a00; /* Цвет ссылки с идентификатором navigation__link */
+}
+.navigation__links li:first-child a {
+    color: #ff8a00; /* Цвет первой ссылки */
+} 
+
+.navigation__links .navigation__link {
+    color: #ff8a00; /* Цвет ссылки с классом navigation__link */
+} 
+
+.navigation__actions {
+    display: flex; /* Flexbox для размещения элементов в строку */
+    align-items: center; /* Выравнивание элементов по вертикали по центру */
+    /* gap: 25px; /* Расстояние между элементами (закомментировано) */
+}
+
+.navigation__actions img {
+    height: 24px; /* Высота изображения */
+    width: 24px; /* Ширина изображения */
+}
+
+.navigation__actions figure {
+    height: 50px; /* Высота фигуры */
+    width: 50px; /* Ширина фигуры */
+    background-color: #ecf0f1; /* Фоновый цвет фигуры */
+    border-radius: 50%; /* Закругленные углы (круг) */
+    display: flex; /* Flexbox для размещения элементов */
+    align-items: center; /* Выравнивание элементов по вертикали по центру */
+    justify-content: center; /* Выравнивание элементов по горизонтали по центру */
+    margin-right: 25px; /* Отступ справа */
+}
+
+.hero-section__container {
+    max-width: 1440px; /* Максимальная ширина контейнера */
+    /* padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 80px;
+    padding-bottom: 80px; /* Отступы (закомментировано) */
+    padding: 80px; /* Отступы со всех сторон */
+    margin: 0 auto; /* Центрирование контейнера */
+
+    display: flex; /* Flexbox для размещения элементов в строку */
+    align-items: center; /* Выравнивание элементов по вертикали по центру */
+    gap: 40px; /* Расстояние между элементами */
+}
+
+.hero-section__left {
+    width: 50%; /* Ширина левого блока */
+}
+
+.hero-section__right {
+    width: 50%; /* Ширина правого блока */
+    height: max-content; /* Высота по содержимому */
+}
+
+.hero-section__img {
+    width: 100%; /* Ширина изображения */
+    height: auto; /* Автоматическая высота */
+}
+
+.hero-section__left span {
+    display: block; /* Отображение как блок */
+    width: max-content; /* Ширина по содержимому */
+    margin-bottom: 24px; /* Отступ снизу */
+    background-color: #ff8a0033; /* Фоновый цвет */
+    color: #ff8a00; /* Цвет текста */
+    font-size: 18px; /* Размер шрифта */
+    border-radius: 123px; /* Закругленные углы */
+    padding: 5px 20px; /* Внутренние отступы */
+}
+
+.hero-section__heading {
+    margin-bottom: 24px; /* Отступ снизу */
+    color: #311f09; /* Цвет текста */
+    font-size: 80px; /* Размер шрифта */
+    font-weight: 600; /* Толщина шрифта */
+    line-height: 88px; /* Межстрочный интервал */
+}
+
+.hero-section__description {
+    margin-bottom: 50px; /* Отступ снизу */
+    color: #5c4529; /* Цвет текста */
+    font-size: 20px; /* Размер шрифта */
+}
+
+.hero-section__cta button:first-child {
+    margin-right: 12px; /* Отступ справа у первой кнопки */
+}
+
+/* Секция приветствия */
+
+#welcome-section {
+    background-color: #3fc66e1a; /* Фоновый цвет */
+}
+
+.welcome-section__container {
+    max-width: 1440px; /* Максимальная ширина контейнера */
+    margin: 0 auto; /* Центрирование контейнера */
+
+    display: flex; /* Flexbox для размещения элементов в строку */
+    align-items: center; /* Выравнивание элементов по вертикали по центру */
+    padding-top: 80px; /* Отступ сверху */
+    padding-right: 80px; /* Отступ справа */
+}
+
+.welcome-section__left {
+    width: 55%; /* Ширина левого блока */
+}
+.welcome-section__left img {
+    width: 100%; /* Ширина изображения */
+    height: auto; /* Автоматическая высота */
+}
+
+.welcome-section__right {
+    width: 45%; /* Ширина правого блока */
+}
+
+.welcome-section__right h2 {
+    font-size: 60px; /* Размер шрифта */
+    line-height: 70px; /* Межстрочный интервал */
+    color: #311f09; /* Цвет текста */
+    margin-bottom: 50px; /* Отступ снизу */
+}
+
+.welcome-section__right h2 span {
+    color: #ff8a00; /* Цвет текста внутри span */
+}
+
+.welcome-section__right p {
+    color: #5c4529; /* Цвет текста */
+    font-size: 20px; /* Размер шрифта */
+    line-height: 40px; /* Межстрочный интервал */
+    margin-bottom: 40px; /* Отступ снизу */
+}
+
+/* Секция меню */
+
+.menu-section__container {
+    max-width: 1440px; /* Максимальная ширина контейнера */
+    margin: 0 auto; /* Центрирование контейнера */
+    padding: 80px; /* Отступы со всех сторон */
+}
+
+.menu-section__container h2 {
+    text-align: center; /* Центрирование текста */
+    font-size: 60px; /* Размер шрифта */
+    line-height: 70px; /* Межстрочный интервал */
+    color: #311f09; /* Цвет текста */
+    margin-bottom: 50px; /* Отступ снизу */
+}
+
+.menu-section__filters {
+    display: flex; /* Flexbox для размещения элементов в строку */
+    justify-content: space-between; /* Пространство между элементами */
+    margin-bottom: 60px; /* Отступ снизу */
+}
+
+.menu-section__meals {
+    display: flex; /* Flexbox для размещения элементов в строку */
+    flex-wrap: wrap; /* Перенос элементов на новую строку */
+    gap: 40px; /* Расстояние между элементами */
+}
+
+.menu-section__stars {
+    margin-bottom: 15px; /* Отступ снизу */
+    margin-right: auto; /* Автоматический отступ справа */
+    margin-left: auto; /* Автоматический отступ слева */
+    width: max-content; /* Ширина по содержимому */
+}
+
+.menu-section__price {
+    font-size: 25px; /* Размер шрифта */
+    line-height: 38px; /* Межстрочный интервал */
+    color: #311f09; /* Цвет текста */
+    font-weight: 600; /* Толщина шрифта */
+}
+
+.card {
+    width: calc((100% - 80px) / 3); /* Ширина карты */
+
+    padding: 35px 37px; /* Внутренние отступы */
+    background-color: #d0ccc733; /* Фоновый цвет */
+    border-radius: 70px; /* Закругленные углы */
+}
+
+.card__img {
+    width: 100%; /* Ширина изображения */
+    height: auto; /* Автоматическая высота */
+    margin-bottom: 24px; /* Отступ снизу */
+}
+
+.card__title {
+    font-size: 30px; /* Размер шрифта */
+    line-height: 60px; /* Межстрочный интервал */
+    font-weight: 600; /* Толщина шрифта */
+    text-align: center; /* Центрирование текста */
+
+    margin-bottom: 5px; /* Отступ снизу */
+}
+
+.card__text {
+    font-size: 14px; /* Размер шрифта */
+    line-height: 28px; /* Межстрочный интервал */
+    color: #59442b; /* Цвет текста */
+    text-align: center; /* Центрирование текста */
+    margin-bottom: 30px; /* Отступ снизу */
+}
+
+.card__footer {
+    display: flex; /* Flexbox для размещения элементов в строку */
+    align-items: center; /* Выравнивание элементов по вертикали по центру */
+    justify-content: space-between; /* Пространство между элементами */
+}
+
+/* Секция бронирования */
+
+#reservation-section {
+    background-color: #fff4e766; /* Фоновый цвет */
+}
+
+.reservation-section__container {
+    padding-left: 0; /* Отсутствие отступа слева */
+    padding-right: 80px; /* Отступ справа */
+    padding-top: 80px; /* Отступ сверху */
+    padding-bottom: 80px; /* Отступ снизу */
+    max-width: 1440px; /* Максимальная ширина контейнера */
+    margin: 0 auto; /* Центрирование контейнера */
+
+    display: flex; /* Flexbox для размещения элементов в строку */
+    align-items: center; /* Выравнивание элементов по вертикали по центру */
+    gap: 40px; /* Расстояние между элементами */
+}
+
+.reservation-section__left {
+    width: 55%; /* Ширина левого блока */
+}
+
+.reservation-section__left img {
+    width: 100%; /* Ширина изображения */
+    height: auto; /* Автоматическая высота */
+}
+
+.reservation-section__right {
+    width: 45%; /* Ширина правого блока */
+}
+
+.reservation-section__right h2 {
+    font-size: 60px; /* Размер шрифта */
+    line-height: 70px; /* Межстрочный интервал */
+    color: #311f09; /* Цвет текста */
+    margin-bottom: 50px; /* Отступ снизу */
+    font-weight: bold; /* Толщина шрифта */
+}
+
+.reservation-section__right h2 span {
+    color: #ff8a00; /* Цвет текста внутри span */
+}
+
+.reservation-section__right p {
+    color: #5c4529; /* Цвет текста */
+    font-size: 20px; /* Размер шрифта */
+    line-height: 40px; /* Межстрочный интервал */
+    margin-bottom: 40px; /* Отступ снизу */
+}
+
+/* Секция шеф-поваров */
+#chefs-section {
+    text-align: center; /* Центрирование текста */
+}
+.chefs-section__container {
+    max-width: 1440px; /* Максимальная ширина контейнера */
+    margin: 0 auto; /* Центрирование контейнера */
+    padding: 80px; /* Отступы со всех сторон */
+}
+.chefs-section__container h2 {
+    font-size: 60px; /* Размер шрифта */
+    line-height: 70px; /* Межстрочный интервал */
+    color: #311f09; /* Цвет текста */
+    margin-bottom: 50px; /* Отступ снизу */
+}
+.chefs-section__container h2 span {
+    color: #ff8a00; /* Цвет текста внутри span */
+}
+
+.chefs-section__chefs {
+    display: flex; /* Flexbox для размещения элементов в строку */
+    gap: 40px; /* Расстояние между элементами */
+    margin: 80px; /* Внешние отступы со всех сторон */
+}
+
+.chefs-section__container .btn-large-orange {
+    display: block; /* Отображение как блок */
+    margin: 0 auto; /* Центрирование кнопки */
+}
+
+.chefs-section__chef {
+    width: calc((100% - 80px) / 3); /* Ширина блока шеф-повара */
+}
+
+.chefs-section__chef img {
+    width: 100%; /* Ширина изображения */
+    height: auto; /* Автоматическая высота */
+    border-radius: 50px; /* Закругленные углы */
+    margin-bottom: 40px; /* Отступ снизу */
+}
+
+.chefs-section__chef:first-child img {
+    background-color: #c4c4c4; /* Фоновый цвет */
+}
+
+.chefs-section__chef:nth-child(2) img {
+    background-color: #ff8a0033; /* Фоновый цвет */
+}
+
+.chefs-section__chef:last-child img {
+    background-color: #9d654233; /* Фоновый цвет */
+}
+
+.chefs-section__chef h4 {
+    margin-bottom: 15px; /* Отступ снизу */
+    color: #311f09; /* Цвет текста */
+    font-weight: 600; /* Толщина шрифта */
+    font-size: 25px; /* Размер шрифта */
+    line-height: 50px; /* Межстрочный интервал */
+}
+
+.chefs-section__chef p {
+    color: #a08d76; /* Цвет текста */
+    font-size: 25px; /* Размер шрифта */
+    line-height: 50px; /* Межстрочный интервал */
+    font-weight: 400; /* Толщина шрифта */
+}
+
+/* Секция отзывов */
+
+#testimonials-section {
+    background-image: url("assets/customers.png"); /* Фоновое изображение */
+    background-position: center; /* Позиционирование фона по центру */
+    text-align: center; /* Центрирование текста */
+}
+
+.testimonials-section__container {
+    max-width: 1440px; /* Максимальная ширина контейнера */
+    margin: 0 auto; /* Центрирование контейнера */
+    padding: 80px; /* Отступы со всех сторон */
+}
+
+.testimonials-section__container2 {
+    width: 600px; /* Ширина контейнера */
+    margin: 0 auto; /* Центрирование контейнера */
+    text-align: center; /* Центрирование текста */
+    color: #311f09; /* Цвет текста */
+    font-size: 18px; /* Размер шрифта */
+}
+
+.testimonials-section__container3 {
+    width: 1000px; /* Ширина контейнера */
+    margin: 0 auto; /* Центрирование контейнера */
+}
+
+.images-container {
+    width: 125px;
+    height: auto;
+    display: flex; /* Flexbox для горизонтального размещения изображений */
+    justify-content: center; /* Центрирование изображений по горизонтали */
+    gap: 40px; /* Расстояние между изображениями (по желанию) */
+}
+
+.images-container img {
+    transition: all 0.3s ease;
+}
+
+.images-container img:hover {
+    filter: brightness(1.2);
+    transform: scale(1.1);
+}
+
+.testimonials-section__container2 h1 {
+    font-size: 60px; /* Размер шрифта */
+    line-height: 70px; /* Межстрочный интервал */
+    color: #311f09; /* Цвет текста */
+    text-align: left; /* Выравнивание текста по левому краю */
+}
+
+.testimonials-section__container2 h2 {
+    font-size: 60px; /* Размер шрифта */
+    line-height: 70px; /* Межстрочный интервал */
+    color: #311f09; /* Цвет текста */
+    margin-bottom: 50px; /* Отступ снизу */
+    text-align: right; /* Выравнивание текста по правому краю */
+}
+
+.testimonials-section__container h2 {
+    font-size: 60px; /* Размер шрифта */
+    line-height: 70px; /* Межстрочный интервал */
+    color: #311f09; /* Цвет текста */
+    margin-bottom: 50px; /* Отступ снизу */
+}
+
+.testimonials-section__container h3 {
+    font-size: 32px; /* Размер шрифта */
+    color: #311f09; /* Цвет текста */
+    line-height: 70px; /* Межстрочный интервал */
+}
+
+.testimonials-section__testimonials {
+    display: flex; /* Flexbox для размещения элементов в строку */
+    gap: 40px; /* Расстояние между элементами */
+    justify-content: space-between; /* Пространство между элементами */
+}
+
+.testimonials-section__testimonial {
+    width: 30%; /* Ширина отзыва */
+    text-align: center; /* Центрирование текста */
+}
+
+.testimonials-section__testimonial img {
+    height: 150px; /* Высота изображения */
+    width: 150px; /* Ширина изображения */
+    border-radius: 50%; /* Закругленные углы (круг) */
+    margin-bottom: 35px; /* Отступ снизу */
+}
+
+.testimonials-section__testimonial h4 {
+    color: #311f09; /* Цвет текста */
+    font-weight: 600; /* Толщина шрифта */
+    font-size: 25px; /* Размер шрифта */
+    line-height: 50px; /* Межстрочный интервал */
+}
+
+.testimonials-section__testimonial h5 {
+    color: #5c4529; /* Цвет текста */
+    font-size: 18px; /* Размер шрифта */
+    line-height: 36px; /* Межстрочный интервал */
+    font-weight: 600; /* Толщина шрифта */
+    margin-bottom: 20px; /* Отступ снизу */
+}
+
+.testimonials-section__testimonial p {
+    color: #5c4529; /* Цвет текста */
+    font-weight: 400; /* Толщина шрифта */
+    font-size: 16px; /* Размер шрифта */
+    line-height: 32px; /* Межстрочный интервал */
+}
+
+/* Секция рабочих часов */
+
+.hours-section__container {
+    max-width: 1440px; /* Максимальная ширина контейнера */
+    padding: 80px; /* Отступы со всех сторон */
+    margin: 0 auto; /* Центрирование контейнера */
+}
+
+.hours-section__background {
+    max-width: 1150px; /* Максимальная ширина фона */
+    height: 750px; /* Высота фона */
+    margin: 0 auto; /* Центрирование фона */
+    border-radius: 150px; /* Закругленные углы */
+
+    background-image: url("assets/business-hours.jpg"); /* Фоновое изображение */
+    background-position: left; /* Позиционирование фона слева */
+    filter: brightness(70%); /* Яркость изображения */
+
+    display: flex; /* Flexbox для размещения элементов в строку */
+    align-items: center; /* Выравнивание элементов по вертикали по центру */
+    justify-content: center; /* Центрирование по горизонтали */
+    text-align: center; /* Центрирование текста */
+}
+
+.hours-section__hours h2 {
+    color: #ffffff; /* Цвет текста */
+    font-size: 60px; /* Размер шрифта */
+    line-height: 70px; /* Межстрочный интервал */
+    margin-bottom: 15px; /* Отступ снизу */
+}
+
+.hours-section__hours h3 {
+    color: #ffffff; /* Цвет текста */
+    font-size: 30px; /* Размер шрифта */
+    line-height: 60px; /* Межстрочный интервал */
+    font-weight: 600; /* Толщина шрифта */
+}
+
+.hours-section__lunch-dinner {
+    width: max-content; /* Ширина по содержимому */
+    margin: 0 auto; /* Центрирование */
+    margin-bottom: 50px; /* Отступ снизу */
+}
+
+.hours-section__lunch-dinner p {
+    color: #ffffff; /* Цвет текста */
+    text-align: center; /* Центрирование текста */
+
+    line-height: 200%; /* Межстрочный интервал */
+}
+
+.hours-section__lunch-dinner p:last-child {
+    text-align: right; /* Выравнивание текста по правому краю */
+}
+
+.hours-section__hours .btn-large-orange {
+    margin-right: 15px; /* Отступ справа */
+}
+
+/* Подвал */
+
+#footer {
+    background-color: #311f09; /* Фоновый цвет */
+}
+
+.footer__container {
+    max-width: 1440px; /* Максимальная ширина контейнера */
+    margin: 0 auto; /* Центрирование контейнера */
+    padding: 80px; /* Отступы со всех сторон */
+}
+
+.footer__content {
+    display: flex; /* Flexbox для размещения элементов в строку */
+    justify-content: space-between; /* Пространство между элементами */
+    margin-bottom: 80px; /* Отступ снизу */
+}
+
+.footer__text {
+    color: #e3e2e0; /* Цвет текста */
+    font-size: 16px; /* Размер шрифта */
+    line-height: 32px; /* Межстрочный интервал */
+    display: block; /* Отображение как блок */
+}
+
+.footer__brand {
+    width: 30%; /* Ширина блока */
+}
+
+.text-center {
+    text-align: center; /* Центрирование текста */
+}
+
+.footer__heading {
+    color: #ff8a00; /* Цвет текста */
+    font-size: 25px; /* Размер шрифта */
+    line-height: 50px; /* Межстрочный интервал */
+}
+
+.footer__social-icons {
+    margin-top: 40px; /* Отступ сверху */
+}
+
+.footer__social-icons img:first-child {
+    margin-right: 30px; /* Отступ справа */
+}
+
+.footer__social-icons img:nth-child(2) {
+    margin-right: 30px; /* Отступ справа */
+}
+
+.footer__logo {
+    margin-bottom: 25px; /* Отступ снизу */
+}
+
+.footer__contact {
+    width: 30%; /* Ширина блока */
+}
+
+.footer__contact p {
+    line-height: 24px; /* Межстрочный интервал */
+}
